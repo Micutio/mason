@@ -1,3 +1,25 @@
+# MASON fork
+
+## Cloning advice
+
+To avoid errors when clonin the repo in combination with Git LFS the following steps are recommended
+[Curtesy of this git issue](https://github.com/git-lfs/git-lfs/issues/911#issuecomment-169998792)
+
+// Skip smudge - We'll download binary files later in a faster batch
+`git lfs install --skip-smudge`
+
+// Do git clone here
+`git clone ...`
+
+// Fetch all the binary files in the new clone
+`git lfs pull`
+
+// Reinstate smudge
+`git lfs install --force`
+
+
+# Original README below
+
 # Build MASON Toolkit
 
 ## Build Core MASON Only
